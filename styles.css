@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    background-color: #303131;
+    /*background-color: #303131;*/
+    background-color: #000;
     font-family: 'Roboto', sans-serif; /* Apply the new font to the whole body */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
@@ -14,12 +15,16 @@ header {
     text-align: center;
     font-size: 24px; /* Adjust font size */
     font-weight: 700; /* Bold font weight */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 nav {
     display: flex; 
     justify-content: center;
-    background-color: #000; /* Ensure nav has a black background */
+    background-color: #303131; /* Ensure nav has a black background */
+    margin: 0; /* Remove default margin */
+    padding: 20px 0; /* Remove default padding */
 }
 
 nav ul {
@@ -123,12 +128,12 @@ h1, h3 {
 }
 
 .resized-image {
-    width: 800px; /* Set the desired width */
+    width: 900px; /* Set the desired width */
     height: auto; /* Adjust height automatically to maintain aspect ratio */
 }
 
 
-/* flip effect */
+/* flip effect used from W3 Schools*/
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -175,37 +180,4 @@ h1, h3 {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Maintain image aspect ratio within card */
-}
-
-
-/* Code used for pop up on index page */
-.image-container {
-    position: relative;
-    width: 400px; /* Adjust based on your image width */
-}
-
-.popup {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    display: none;
-    pointer-events: none;
-}
-
-.engine-popup {
-    top: 160px;
-    left: 20px;
-}
-
-.tail-popup {
-    top: 70px;
-    left: 250px;
-}
-
-/* Hover effect */
-.engine-area:hover + .engine-popup,
-.tail-area:hover + .tail-popup {
-    display: block;
 }

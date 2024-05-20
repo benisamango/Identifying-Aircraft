@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: #303131;
+    font-family: 'Roboto', sans-serif; /* Apply the new font to the whole body */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    color: #fff; /* Default text color */
+}
+
+header {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px; /* Adjust font size */
+    font-weight: 700; /* Bold font weight */
+}
+
+nav {
+    display: flex; 
+    justify-content: center;
+    background-color: #000; /* Ensure nav has a black background */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px; /* Adjust font size for navigation links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px; /* Set maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Add padding for better alignment */
+}
+
+.content header {
+    margin-bottom: 20px;
+}
+
+.centered-iframe {
+    display: block;
+    margin: 0 auto; 
+    width: 75%; 
+    height: 800px;
+}
+
+.text-section {
+    margin-top: 40px;
+    text-align: left; 
+    color: #fff;
+}
+
+.text-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1, h3 {
+    color: white; /* Change text color to white */
+    font-family: 'Roboto', sans-serif; /* Apply the new font to headers */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .centered-iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-section h2 {
+        font-size: 18px;
+    }
+
+    .text-section p {
+        font-size: 14px;
+    }
+}
+
+/* Invert image property */
+.inverted-image {
+    filter: invert(1);
+}
+
+.resized-image {
+    width: 800px; /* Set the desired width */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+}
+
+
+/* flip effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    display: inline-block; /* Ensure cards are displayed side by side */
+    margin: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #fff; /* White background for front of card */
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #2980b9; /* Blue background for back of card */
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain image aspect ratio within card */
+}
+
+
+/* Code used for pop up on index page */
+.image-container {
+    position: relative;
+    width: 400px; /* Adjust based on your image width */
+}
+
+.popup {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    pointer-events: none;
+}
+
+.engine-popup {
+    top: 160px;
+    left: 20px;
+}
+
+.tail-popup {
+    top: 70px;
+    left: 250px;
+}
+
+/* Hover effect */
+.engine-area:hover + .engine-popup,
+.tail-area:hover + .tail-popup {
+    display: block;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="image-container">
+    <img src="images/Fiji-Airbus-A350.avif" alt="A-350 Image" width="400" usemap="#airbus-map">
+    <div class="popup engine-popup">Engines</div>
+    <div class="popup tail-popup">Tail</div>
+</div>
+
+<map name="airbus-map">
+    <!-- Define clickable area for engines -->
+    <area shape="rect" coords="60,140,120,180" alt="Engines" class="engine-area">
+    
+    <!-- Define clickable area for tail -->
+    <area shape="rect" coords="230,40,310,120" alt="Tail" class="tail-area">
+</map>
+
+<script src="script.js"></script>
+
+</body>
+</html>

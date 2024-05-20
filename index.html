@@ -3,24 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hover Effect Demo</title>
+    <title>Wings</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="image-container">
-    <img src="images/Fiji-Airbus-A350.avif" alt="A-350 Image" width="400" usemap="#airbus-map">
-    <div class="popup engine-popup">Engines</div>
-    <div class="popup tail-popup">Tail</div>
-</div>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Aircraft</a></li>
+            <li><a href="tail.html">Tail</a></li>
+            <li><a href="engine.html">Engine</a></li>
+            <li><a href="flightradar.html">FlightRadar24</a></li>
+        </ul>
+    </nav>
+</header>
 
-<map name="airbus-map">
-    <!-- Define clickable area for engines -->
-    <area shape="rect" coords="60,140,120,180" alt="Engines" class="engine-area">
-    
-    <!-- Define clickable area for tail -->
-    <area shape="rect" coords="230,40,310,120" alt="Tail" class="tail-area">
-</map>
+<main class="content">
+    <div class="container">
+        <section class="text-section">
+            <h2>Identifying Aircraft Based on Wing shape</h2>
+            <p>
+                Aircraft can often be identified by their wing shape. Below are some examples of aircraft wing shapes. 
+            </p>
+        </section>
+        
+        <section class="image-section">
+            <img src="images/aircraft_silhouette.jpg" alt="Aircraft Silhouette" class="inverted-image resized-image">
+            <a href="tail.html" class="box-link"><img src="images/real_aircraft_tail.jpeg" alt="real aircraft engine" class="box-image"></a>
+            <a href="engine.html" class="box-link"><img src="images/Jet-engine.jpeg" alt="real jet engine" class="box-image"></a>
+            <a href="flightradar.html" class="box-link"><img src="images/flightradar_logo.png" alt="FlightRadar24 Logo" class="box-image"></a>
+        </section>
+    </div>
+</main>
 
 <script src="script.js"></script>
 

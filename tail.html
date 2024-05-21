@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tail</title>
+    <title>Aircraft Tails</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
 <header class="header">
     <nav>
         <ul>
-          <li><a href="index.html">Aircraft</a></li>
+            <li><a href="index.html">Aircraft</a></li>
             <li><a href="tail.html">Tail</a></li>
             <li><a href="engine.html">Engine</a></li>
             <li><a href="flightradar.html">FlightRadar24</a></li>
@@ -19,35 +19,28 @@
     </nav>
 </header>
 
-<h1>Airline Tail Cards</h1>
-<h3>Hover over the cards below:</h3>
+<main class="content">
+    <div class="container">
+        <section class="image-section">
+            <img src="images/qantas_tail.jpeg" alt="Tail 1" class="box-image" onclick="showInfo('Tail 1', 'Tail 1 Description')">
+            <img src="images/qantas_tail.jpeg" alt="Tail 2" class="box-image" onclick="showInfo('Tail 2', 'Tail 2 Description')">
+            <img src="images/qantas_tail.jpeg" alt="Tail 3" class="box-image" onclick="showInfo('Tail 3', 'Tail 3 Description')">
+            <img src="images/qantas_tail.jpeg" alt="Tail 4" class="box-image" onclick="showInfo('Tail 4', 'Tail 4 Description')">
+            <img src="images/qantas_tail.jpeg" alt="Tail 5" class="box-image" onclick="showInfo('Tail 5', 'Tail 5 Description')">
+            <img src="images/qantas_tail.jpeg" alt="Tail 6" class="box-image" onclick="showInfo('Tail 6', 'Tail 6 Description')">
+        </section>
+    </div>
 
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="images/qantas_tail.jpeg" alt="Qantas Tail">
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-body"></p>
+        </div>
     </div>
-    <div class="flip-card-back">
-      <h2>Qantas</h2> 
-      <p>Australia's largest airline.</p> 
-      <p>Known for its iconic red kangaroo logo.</p>
-    </div>
-  </div>
-</div>
-
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="images/emirates_tail.png" alt="Emirates Tail">
-    </div>
-    <div class="flip-card-back">
-      <h2>Emirates</h2> 
-      <p>One of the largest airlines in the world.</p> 
-      <p>Famous for its luxury and extensive route network.</p>
-    </div>
-  </div>
-</div>
+</main>
 
 <script src="script.js"></script>
+
 </body>
 </html>

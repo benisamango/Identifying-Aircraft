@@ -21,6 +21,22 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const logos = document.querySelectorAll('.tail-logo');
+
+    logos.forEach(logo => {
+        logo.addEventListener('click', () => {
+            const info = logo.querySelector('.logo-info');
+            if (info.style.display === 'block') {
+                info.style.display = 'none';
+            } else {
+                info.style.display = 'block';
+            }
+        });
+    });
+});
+
+
 
 // Get the button
 let topBtn = document.getElementById("topBtn");
@@ -46,32 +62,4 @@ topBtn.onclick = function() {
 function scrollToTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-}
-
-// Code to display text when tail image is cicked
-var modal = document.getElementById("myModal");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// Function to show modal with tail information
-function showInfo(tailName, tailDescription) {
-    // Set the modal title and body content
-    document.getElementById("modal-title").textContent = tailName;
-    document.getElementById("modal-body").textContent = tailDescription;
-
-    // Display the modal
-    modal.style.display = "block";
-}
-
-// Close the modal when the user clicks on <span> (x)
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Close the modal when the user clicks anywhere outside of it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
 }

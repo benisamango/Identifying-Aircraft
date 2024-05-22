@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aircraft Identification</title>
+    <title>Identify Aircraft by Tail Logos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,22 +23,86 @@
 </header>
 
 <main class="content">
-    <div class="container">
-        <section class="image-section">
-            <img src="images/qantas_tail.jpeg" alt="Tail 1" class="box-image" onclick="showInfo('Tail 1', 'Tail 1 Description')">
-            <img src="images/qantas_tail.jpeg" alt="Tail 2" class="box-image" onclick="showInfo('Tail 2', 'Tail 2 Description')">
-            <img src="images/qantas_tail.jpeg" alt="Tail 3" class="box-image" onclick="showInfo('Tail 3', 'Tail 3 Description')">
-            <img src="images/qantas_tail.jpeg" alt="Tail 4" class="box-image" onclick="showInfo('Tail 4', 'Tail 4 Description')">
-            <img src="images/qantas_tail.jpeg" alt="Tail 5" class="box-image" onclick="showInfo('Tail 5', 'Tail 5 Description')">
-            <img src="images/qantas_tail.jpeg" alt="Tail 6" class="box-image" onclick="showInfo('Tail 6', 'Tail 6 Description')">
-        </section>
+    <section class="text-section">
+        <h2 class="large-text">Identifying Aircraft by Tail Logos</h2>
+        <p>
+            Learn to identify various aircraft by their tail logos. Click on each tail logo to learn more about the airline and its fleet.
+        </p>
+    </section>
+   <!-- First row -->
+    <div class="tail-logos-container">
+        <div class="tail-logo" id="Emirates">
+            <img src="images/emirates-tail.jpg" alt="Emirates Tail logo" class="logo-image">
+            <div class="logo-info">Emirates: <br /> Based in Dubai. Largest airline in the Middle East. One of the two flag carriers of the United Arab Emirates</div>
+        </div>
+        <div class="tail-logo" id="Qantas">
+            <img src="images/qantas_tail.webp" alt="qantas tail logo" class="logo-image">
+            <div class="logo-info">Qantas: <br /> Based in Sydney. Largest airline in Australia. Flag carrier of Australia</div>
+        </div>
+        <div class="tail-logo" id="Virgin">
+            <img src="images/virgin-australia-tail.jpg" alt="Virgin australia tail" class="logo-image">
+            <div class="logo-info">Virgin Australia: <br /> Based in Brisbane. Second largest airline in Australia</div>
+        </div>
+        <div class="tail-logo" id="Rex">
+            <img src="images/Rex-logo-tail.jpg" alt="Rex Airlines Tail logo" class="logo-image">
+            <div class="logo-info">Rex Airlines: <br /> Based in Sydney. Largest regional airline in Australia</div>
+        </div>
     </div>
-
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-body"></p>
+   <!-- Second row -->
+    <div class="tail-logos-container">
+        <div class="tail-logo" id="qatar">
+            <img src="images/qatar-tail.webp" alt="Qatar Airways Tail logo" class="logo-image">
+            <div class="logo-info">Qatar Airways: <br /> Based in Doha, Qatar. Flag carrier of Qatar</div>
+        </div>
+        <div class="tail-logo" id="jetstar">
+            <img src="images/jetstar-tail.jpg" alt="jetstar tail logo" class="logo-image">
+            <div class="logo-info">Jetstar: <br /> Based in Melbourne. Low-cost airline. Wholly owned subsidiary of Qantas</div>
+        </div>
+        <div class="tail-logo" id="singapore">
+            <img src="images/singapore-airlines-tail.jpg" alt="singapore airlines tail" class="logo-image">
+            <div class="logo-info">Singapore Airlines: <br /> Based in Singapore. Flag carrier of Singapore. Ranked as a 5 star airline</div>
+        </div>
+        <div class="tail-logo" id="etihad">
+            <img src="images/etihad-airways-tail.jpg" alt="Etihad Airways tail" class="logo-image">
+            <div class="logo-info">Etihad Airways: <br /> Based in Khalifa City, Abu Dhabi. National airline of United Arab Emirates</div>
+        </div>
+    </div>
+    <!-- Third row -->
+    <div class="tail-logos-container">
+        <div class="tail-logo" id="newZealand">
+            <img src="images/air-new-zealand-tail.webp" alt="air new zealand Tail logo" class="logo-image">
+            <div class="logo-info">Air New Zealand: <br /> Based in Auckland. Flag carrier of New Zealand</div>
+        </div>
+        <div class="tail-logo" id="Cathay">
+            <img src="images/cathay-pacific-tail.png" alt="cathay pacific tail logo" class="logo-image">
+            <div class="logo-info">Cathay Pacific: <br /> Based in Hong Kong. Flag carrier of Hong Kong. Ranked amongst the best airlines in the world</div>
+        </div>
+        <div class="tail-logo" id="airAsia">
+            <img src="images/airasia-x-tail.jpg" alt="Air Asia X airlines tail" class="logo-image">
+            <div class="logo-info">Air Asia X: <br /> Based in Sepang, Malaysia. Asia's largest low cost carrier</div>
+        </div>
+        <div class="tail-logo" id="american">
+            <img src="images/american-airlines-tail.jpg" alt="American airlines tail" class="logo-image">
+            <div class="logo-info">American Airlines: <br /> Based in Fort Worth, Texas. Largest airline in the world</div>
+        </div>
+    </div>
+    <!-- Fourth row -->
+    <div class="tail-logos-container">
+        <div class="tail-logo" id="british">
+            <img src="images/british-airways-tail.jpg" alt="british airways Tail logo" class="logo-image">
+            <div class="logo-info">British Airways: <br /> Based in London. Flag carrier of the United Kingdom</div>
+        </div>
+        <div class="tail-logo" id="thai">
+            <img src="images/thai-airways-tail.jpg" alt="thai airways tail logo" class="logo-image">
+            <div class="logo-info">Thai Airways: <br /> Based in Bangkok, Thailand. Flag carrier of Thailand</div>
+        </div>
+        <div class="tail-logo" id="malaysia">
+            <img src="images/malaysia-airlines.jpg" alt="Malaysia airlines tail" class="logo-image">
+            <div class="logo-info">Malaysia Airlines: <br /> Based in Kuala Lumpur, Malaysia. Flag carrier of Malaysia</div>
+        </div>
+        <div class="tail-logo" id="alliance">
+            <img src="images/alliance-airlines.jpg" alt="Alliance airlines tail" class="logo-image">
+            <div class="logo-info">Alliance Airlines: <br /> Based in Brisbane. Runs FIFO air charter services for the Australian mining and resources industry</div>
         </div>
     </div>
 </main>

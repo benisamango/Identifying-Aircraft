@@ -1,13 +1,30 @@
-// event listener for adding alert to each image click 
-document.addEventListener("DOMContentLoaded", () => {
-    const images = document.querySelectorAll('.image-section img');
+// Code to display text when tail image is cicked
+var modal = document.getElementById("myModal");
 
-    images.forEach(img => {
-        img.addEventListener('click', () => {
-            alert(`You clicked on ${img.alt}`);
-        });
-    });
-});
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// Function to show modal with tail information
+function showInfo(tailName, tailDescription) {
+    // Set the modal title and body content
+    document.getElementById("modal-title").textContent = tailName;
+    document.getElementById("modal-body").textContent = tailDescription;
+
+    // Display the modal
+    modal.style.display = "block";
+}
+
+// Close the modal when the user clicks on <span> (x)
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Close the modal when the user clicks anywhere outside of it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 // event listener to add hover effect to images
 document.addEventListener("DOMContentLoaded", function() {

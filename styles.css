@@ -73,7 +73,7 @@ nav ul li a:hover {
 
 .text-section {
     margin-top: 30px; /* Add margin top to create space */
-    margin-bottom: 70px; /* Add margin top to create space */
+    margin-bottom: 40px; /* Add margin top to create space */
     width: 100%;
     text-align: center;
 }
@@ -125,11 +125,22 @@ nav ul li a:hover {
     max-width: 600px; /* Adjust size as needed */
 }
 
-.box-image {
+.large-image {
     max-width: 100%; /* Ensure the image scales responsively */
     width: 1000px;    /* Set the desired width */
     max-height: 1000px;
     height: auto;    /* Maintain the aspect ratio */
+}
+
+.box-image {
+    width: 150px;
+    height: 150px;
+    margin: 10px; /* Adjust spacing between box images */
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.box-image:hover {
+    transform: scale(1.1); /* Enlarge the box image on hover */
 }
 
 /* Return to Top Button */
@@ -152,6 +163,23 @@ nav ul li a:hover {
 
 .top-btn:hover {
     background-color: #555; /* Darker background on hover */
+}
+
+/* General styles for the iframe section */
+.iframe-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0; /* Adds spacing around the iframe section */
+}
+
+.centered-iframe {
+    border: none; /* Removes default iframe border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for depth */
+    border-radius: 8px; /* Rounds the corners of the iframe */
+    width: 100%; /* Sets the width to 75% of the container */
+    max-width: 1200px; /* Maximum width for large screens */
+    height: 800px; /* Fixed height */
 }
 
 
@@ -177,6 +205,11 @@ nav ul li a:hover {
 
     .text-section p {
         font-size: 16px;
+    }
+
+    .centered-iframe {
+        width: 90%; /* Adjusts width for smaller screens */
+        height: 400px; /* Adjusts height for smaller screens */
     }
 }
 

@@ -3,44 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wings</title>
+    <title>Aircraft Identification</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
+    <h1 class="medium-text">Commercial Aircraft Identification</h1>
+    <hr>
     <nav>
         <ul>
-            <li><a href="index.html">Aircraft</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aircraft.html">Aircraft</a></li>
             <li><a href="tail.html">Tail</a></li>
             <li><a href="engine.html">Engine</a></li>
             <li><a href="flightradar.html">FlightRadar24</a></li>
         </ul>
     </nav>
-
-    <h1 class="large-text">How to Identify Commercial Aircraft around Brisbane Airport</h1>
 </header>
 
 <main class="content">
-    <div class="container">
-        
-        
-        <section class="image-section">
-            <img src="images/aircraft_silhouette.jpg" alt="Aircraft Silhouette" class="inverted-image resized-image">
-            <a href="tail.html" class="box-link"><img src="images/real_aircraft_tail.jpeg" alt="real aircraft engine" class="box-image"></a>
-            <a href="engine.html" class="box-link"><img src="images/Jet-engine.jpeg" alt="real jet engine" class="box-image"></a>
-            <a href="flightradar.html" class="box-link"><img src="images/flightradar_logo.png" alt="FlightRadar24 Logo" class="box-image"></a>
-        </section>
-        
-        
-        <section class="text-section">
-            <h2>Identifying Aircraft Based on Wing shape</h2>
-            <p>
-                Aircraft can often be identified by their wing shape. Below are some examples of aircraft wing shapes. 
-            </p>
-        </section>
-    </div>
+    <section class="spaced-text-section">
+        <h2 class="title-text">How to Identify Commercial Aircraft around Brisbane Airport</h2>
+        <p>
+            If you live in Brisbane or have been outside while on campus at UQ, odds are that you have seen an aircraft fly overhead.
+            Brisbane airport is a close 23km from UQ where around 700 aircraft take-off and land every day.
+            I had never noticed it at first, however if you pay attention to which aircraft come in, you begin to notice the different aircraft types and even the schedule of their arrivals.
+            Having become interested in the world of aviation, I have wanted to create a website for anyone who may also be interested in the types of aircraft that fly into Brisbane every day.
+            The website will be a simple guide for identifying the aircraft that land at Brisbane airport. This website provides a list of six commercial aircraft that commonly land at
+            Brisbane Airport and focus on the two main distinctions used to identify aircraft: aircraft engines and aircraft tails. 
+        </p>
+    </section>
+
+    <section class="text-section">
+        <h2 class="large-text">Six main commercial aircraft that land at Brisbane Airport</h2>
+        <div class="container">
+            <section class="image-section">
+                <a href="aircraft.html" class="box-link"><img src="images/Aircraft-silhouette.png" alt="Aircraft Silhouette" class="box-image"></a>
+            </section>
+        </div>
+    </section>
+
+    <section class="text-section">
+        <h2 class="large-text">Identifying Aircraft based on their tail logos</h2>
+        <div class="container">
+            <section class="image-section">
+                <a href="tail.html" class="box-link"><img src="images/aircraft_tail.png" alt="Aircraft Tail" class="box-image"></a>
+            </section>
+        </div>
+    </section>
+
+    <section class="text-section">
+        <h2 class="large-text">Identifying Aircraft based on their engine type</h2>
+        <div class="container">
+            <section class="image-section">
+                <a href="engine.html" class="box-link"><img src="images/aircraft_engine.png" alt="Aircraft Engine"></a>
+            </section>
+        </div>
+    </section>
+
+    <section class="text-section">
+        <h2 class="large-text">Identify Aircraft in Real-Time</h2>
+        <div class="container">
+            <section class="image-section">
+                <a href="flightradar.html" class="box-link"><img src="images/flightradar_logo.png" alt="FlightRadar24 Logo"></a>
+            </section>
+        </div>
+    </section>
 </main>
+
+<!-- Return to Top Button -->
+<button id="topBtn" class="top-btn">Return to Top</button>
 
 <script src="script.js"></script>
 

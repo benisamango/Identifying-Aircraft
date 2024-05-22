@@ -114,8 +114,6 @@ nav ul li a:hover {
 }
 
 .image-section img {
-    
-    transition: transform 0.3s ease;
     max-width: 100%;
     height: auto; /* Ensure aspect ratio is maintained */
 }
@@ -136,11 +134,6 @@ nav ul li a:hover {
     width: 150px;
     height: 150px;
     margin: 10px; /* Adjust spacing between box images */
-    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
-}
-
-.box-image:hover {
-    transform: scale(1.1); /* Enlarge the box image on hover */
 }
 
 /* Return to Top Button */

@@ -90,14 +90,14 @@ nav ul li a:hover {
 
 .spaced-text-section {
     margin-top: 30px; /* Add margin top to create space */
-    margin-bottom: 130px; /* Add margin top to create space */
+    margin-bottom: 110px; /* Add margin top to create space */
     width: 100%;
     text-align: center;
 }
 
 .spaced-text-section h2 {
     font-size: 28px;
-    margin-bottom: 10px;
+    
 }
 
 .spaced-text-section p {
@@ -111,6 +111,7 @@ nav ul li a:hover {
     justify-content: space-around;
     width: 100%;
     margin-bottom: 70px; /* Add margin bottom to create space */
+    margin-top: 70px;
 }
 
 .image-section img {
@@ -125,6 +126,21 @@ nav ul li a:hover {
     margin: 0 auto; /* Center the image */
 }
 
+#aircraft-engine {
+    max-width: 600px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+#aircraft-engine {
+    max-width: 600px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 70px;
+}
+
 /* Additional styles for specific images */
 .inverted-image {
     max-width: 600px; /* Adjust size as needed */
@@ -132,7 +148,7 @@ nav ul li a:hover {
 
 .large-image {
     max-width: 100%; /* Ensure the image scales responsively */
-    width: 1000px;    /* Set the desired width */
+    width: 900px;    /* Set the desired width */
     max-height: 1000px;
     height: auto;    /* Maintain the aspect ratio */
 }

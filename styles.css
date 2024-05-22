@@ -41,6 +41,11 @@ nav ul li a:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
+nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .title-text {
     text-align: center;
     margin: 20px 0;
@@ -90,7 +95,7 @@ nav ul li a:hover {
 
 .spaced-text-section {
     margin-top: 30px; /* Add margin top to create space */
-    margin-bottom: 110px; /* Add margin top to create space */
+    margin-bottom: 100px; /* Add margin top to create space */
     width: 100%;
     text-align: center;
 }

@@ -247,6 +247,107 @@ nav ul li a.active {
     animation: fadeIn 0.5s;
 }
 
+.logo-info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    z-index: 10;
+    animation: fadeIn 0.5s; /* Animation for fading in */
+}
+
+
+.aircraft-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.aircraft-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.aircraft-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 1000px; /* Fixed width for the card */
+    margin: 20px;
+    padding: 15px;
+    transition: transform 0.3s; /* Transition for smooth scaling */
+    text-align: center;
+    cursor: pointer;
+}
+
+.aircraft-card:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.aircraft-image {
+    width: 100%; /* Image takes up the full width of the card */
+    border-radius: 10px;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 60px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1300px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Add Animation */
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;

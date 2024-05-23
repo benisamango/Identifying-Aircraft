@@ -63,3 +63,27 @@ function scrollToTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const closeBtn = document.querySelector('.close');
+    
+    document.querySelectorAll('.aircraft-card').forEach(card => {
+        card.addEventListener('click', function() {
+            const imgSrc = this.getAttribute('data-image');
+            modal.style.display = 'block';
+            modalImg.src = imgSrc;
+        });
+    });
+
+    closeBtn.onclick = function() {
+        modal.style.display = 'none';
+    };
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    };
+});

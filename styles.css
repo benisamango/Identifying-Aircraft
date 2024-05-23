@@ -186,6 +186,7 @@ nav ul li a.active {
     background-color: #555; /* Darker background on hover */
 }
 
+
 /* General styles for the iframe section */
 .iframe-section {
     display: flex;
@@ -199,7 +200,7 @@ nav ul li a.active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for depth */
     border-radius: 8px; /* Rounds the corners of the iframe */
     width: 100%; /* Sets the width to 75% of the container */
-    max-width: 1200px; /* Maximum width for large screens */
+    max-width: 1150px; /* Maximum width for large screens */
     height: 800px; /* Fixed height */
 }
 

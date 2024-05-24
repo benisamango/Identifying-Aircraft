@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brisbane Aviation</title>
     <link rel="icon" href="images/aircraft-favicon.webp" type="image/webp">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1 class="medium-text">Brisbane Aviation</h1>
-    <hr>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aircraft.html">Common Aircraft</a></li>
-            <li><a href="tail.html">Tail Logos</a></li>
-            <li><a href="flightradar.html" class="active">FlightRadar24</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h1 class="medium-text">Brisbane Aviation</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aircraft.html">Common Aircraft</a></li>
+                <li><a href="tail.html">Tail Logos</a></li>
+                <li><a href="flightradar.html" class="active">FlightRadar24</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main class="content">
-    <section class="text-section">
-        <h2 class="large-text">Real-Time Aircraft Activity over Brisbane Airport</h2>
-        <p>
-            The embedded map below uses FlightRadar24 to show real-time aircraft activity over Brisbane Airport.
-            You can observe the aircraft flying into and out of Brisbane, track their routes, and get live updates on flight statuses.
-            This application is great for anyone wanting to learn more about aviation as you can track aircraft flying all over the world.
-        </p>
-    </section>
+    <main class="content">
+        <section class="text-section">
+            <h2 class="large-text">Real-Time Aircraft Activity over Brisbane Airport</h2>
+            <p>
+                The embedded map below uses FlightRadar24 to show real-time aircraft activity over Brisbane Airport.
+                You can observe the aircraft flying into and out of Brisbane, track their routes, and get live updates
+                on flight statuses.
+                This application is great for anyone wanting to learn more about aviation as you can track aircraft
+                flying all over the world.
+            </p>
+        </section>
 
-    <section class="iframe-section">
-        <iframe 
-            src="https://www.flightradar24.com/simple_index.php?lat=-27.4&lon=153.1&z=12"
-            frameborder="0"
-            class="centered-iframe"
-            allowfullscreen>
-        </iframe>
-    </section>
-</main>
+        <section class="iframe-section">
+            <iframe src="https://www.flightradar24.com/simple_index.php?lat=-27.4&lon=153.1&z=12" frameborder="0"
+                class="centered-iframe" allowfullscreen>
+            </iframe>
+        </section>
+    </main>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>

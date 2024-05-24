@@ -1,6 +1,7 @@
 // Event listener to add hover effect to images
 // Resources adapted from W3 Schools:
 // https://www.w3schools.com/howto/howto_css_image_overlay.asp
+// https://www.w3schools.com/js/js_htmldom_eventlistener.asp
 document.addEventListener("DOMContentLoaded", function () {
     // Select all images within the image-section
     const images = document.querySelectorAll('.image-section img');
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Event listener to display information on each tail logo
 // Resources adapted from W3 Schools: 
 // https://www.w3schools.com/howto/howto_css_cards.asp
+// https://www.w3schools.com/js/js_htmldom_eventlistener.asp
 document.addEventListener('DOMContentLoaded', function () {
     // Select all tail logos
     const logos = document.querySelectorAll('.tail-logo');
@@ -75,7 +77,8 @@ function scrollToTop() {
 
 // Event listener for displaying image modal on aircraft page
 // Resources adapted from W3 Schools:
-// https://www.w3schools.com/howto/howto_css_modal_images.asp#:~:text=Modal%20Image,this%20example%2C%20we%20use%20images.
+// https://www.w3schools.com/howto/howto_css_modal_images.asp#:~:text=Modal%20Image,this%20example%2C%20we%20use%20images
+// https://www.w3schools.com/js/js_htmldom_eventlistener.asp
 document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('imageModal');
     const modalImg = document.getElementById('modalImage');
@@ -84,11 +87,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.aircraft-card').forEach(card => {
         // Add a click event listener to each card
         card.addEventListener('click', function () {
-            // When a card is clicked, retrieve the value of the 'data-image' attribute
+            // When a card is clicked, retrieve the value of the data-image attribute
             const imgSrc = this.getAttribute('data-image');
-            // Display the modal by changing its style to 'block'
+            // Display the modal by changing its style to block
             modal.style.display = 'block';
-            // Set the 'src' attribute of the modal image element to the value of 'imgSrc'
+            // Set the src of modal image to the value of imgSrc
             modalImg.src = imgSrc;
         });
     });
@@ -98,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'none';
     };
 
+    // Close model on any other click
     window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = 'none';
